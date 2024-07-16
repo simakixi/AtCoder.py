@@ -1,0 +1,5 @@
+x1,y1 = map(int, input().split())
+x2,y2 = map(int, input().split())
+x3,y3 = map(int, input().split())
+A,B,C = sorted([(x2-x1)**2+(y2-y1)**2,(x3-x2)**2+(y3-y2)**2,(x3-x1)**2+(y3-y1)**2])
+print("YNeos"[(A+B)**2!=C**2::2])
